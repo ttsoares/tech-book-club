@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "tbc-lp",
+    "slug": "tbc-lp",
+    "version": "1.0.0",
+    "orientation": "prortrait",
+    "icon": "./assets/images/favicon.png",
+    "scheme": "tbc",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true, 
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "static"
+    },
+    "experiments": {
+      "tsconfigPaths": true
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/inter/Inter.ttf",
+            "./assets/fonts/inter/InterIt.ttf",
+            "./assets/fonts/martian-mono/Martian.ttf"
+          ]
+        }
+      ]
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    }
+  }
+}
