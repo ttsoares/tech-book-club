@@ -5,24 +5,25 @@ import { ResponsiveImageAlt } from '../utils/ResponsiveImage';
 
 export default function SectionOne() {
   return (
-    <View className="mb-10 flex">
+    <View className="mb-16 flex">
       <ImageBackground
         source={require('../assets/images/pattern-light-bg.png')}
-        className="relative flex-1 items-center justify-center overflow-hidden md:p-10"
-        resizeMode="cover">
+        className="relative h-full flex-1 items-center justify-center overflow-hidden md:p-10"
+        resizeMode="cover"
+        style={{ flex: 1, width: '100%', height: '100%' }}>
         <Image
           className="absolute -bottom-[540px] -right-[540px] "
           source={require('../assets/images/pattern-glow.png')}
         />
         {/* Header with logo */}
-        <View className="ml-24 flex w-full  items-start p-8">
+        <View className="flex w-full items-start  p-8 md:ml-24">
           <Image source={require('../assets/images/logo.svg')} className="h-8 w-12" />
         </View>
         {/* Main content */}
-        <View className="flex w-full flex-col items-center justify-center space-y-2 lg:flex-row">
-          <View className="mt-20 flex w-full items-center justify-center space-y-5 lg:w-1/2">
+        <View className="flex w-full flex-col items-center justify-start space-y-2 px-5 md:items-start lg:flex-row lg:items-center lg:justify-center">
+          <View className="flex w-full items-start justify-start space-y-5 md:mt-20 lg:w-1/2 lg:items-center lg:justify-center">
             {/* LEFT: Heading with gradient text */}
-            <View className="ml-10">
+            <View className="lg:ml-10">
               <Text className="font-Martian text-p1m font-extrabold text-gradient-brand md:text-p1">
                 Join the
               </Text>
@@ -34,7 +35,7 @@ export default function SectionOne() {
               </Text>
             </View>
             {/* Description */}
-            <Text className="ml-10 w-[75%] text-p5 leading-relaxed text-gray-600">
+            <Text className="w-full text-p5 leading-relaxed text-gray-600 md:w-[75%] lg:ml-10">
               Turn your reading time into learning time with fellow tech enthusiasts. Get curated
               recommendations, join vibrant discussions, and level up your skills one chapter at a
               time.
@@ -46,7 +47,7 @@ export default function SectionOne() {
               accessibilityLabel="Get started button"
             />
             {/* Social proof */}
-            <View className="ml-10 flex  flex-row items-center justify-start">
+            <View className="flex flex-row items-center  justify-start pb-8 lg:ml-10">
               {/* Avatar stack */}
               <Image
                 source={require('../assets/images/image-avatars.webp')}
@@ -74,12 +75,12 @@ export default function SectionOne() {
           </View>
 
           {/* RIGHT: Image */}
-          <View className="flex w-full items-center justify-center lg:w-1/2">
+          <View className="flex w-full items-start justify-center lg:w-1/2 lg:items-center">
             <ResponsiveImageAlt
               mobileSource={require('../assets/images/image-hero-mobile.webp')}
               tabletSource={require('../assets/images/image-hero-tablet.webp')}
               desktopSource={require('../assets/images/image-hero-desktop.webp')}
-              className="h-[530px] w-[500px] items-center justify-center overflow-hidden rounded-lg"
+              className="h-[384px] w-[343px] items-center justify-center overflow-hidden rounded-lg md:h-[530px] md:w-[500px]"
               imageStyle={{ transform: [{ scale: 0.48 }] }}
             />
           </View>

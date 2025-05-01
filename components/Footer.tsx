@@ -10,8 +10,8 @@ export default function Footer() {
         className="relative flex-1 items-center justify-center overflow-hidden"
         imageStyle={{ opacity: 1, width: '100%' }}
         resizeMode="cover">
-        <View className="flex h-[500px] w-full items-center justify-center space-y-5">
-          <Text className="max-w-[700px] text-center font-Martian text-p2 font-bold text-c_n_0">
+        <View className="flex h-[660px] w-full items-center justify-center space-y-5">
+          <Text className="mb-8 max-w-[700px] text-center font-Martian text-p2m font-bold text-c_n_0 md:text-p2">
             Ready to debug your reading list?
           </Text>
           <DarkButton

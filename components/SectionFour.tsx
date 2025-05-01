@@ -5,8 +5,8 @@ import LightButton from './LightButton';
 
 export default function SectionFour() {
   return (
-    <View className="mb-10 flex">
-      <View className="flex w-full flex-col  items-center justify-center space-y-10  py-10">
+    <View className="mb-28 flex">
+      <View className="mb-20 flex w-full  flex-col items-center justify-center space-y-10 py-5">
         <Text className="w-full text-center font-Martian text-p2m font-bold md:text-p2">
           Membership options
         </Text>
@@ -85,7 +85,7 @@ export default function SectionFour() {
           </View>
         </View>
       </View>
-      <View className="lg:blockmy-20 mx-auto hidden h-1 w-5 border-b-2 border-red-500" />
+
       <View className="mx-8 flex-row lg:mx-auto">
         {[1, 2, 3, 4, 5].map((_, index) => (
           <Image
@@ -100,7 +100,7 @@ export default function SectionFour() {
           "This book club transformed my technical reading from a solitary activity into an
           enriching community experience. The discussions are gold!"
         </Text>
-        <Text className=" text-p5 lg:mx-auto">Sarah Chen, Software Architect</Text>
+        <Text className="mt-8 text-p5 lg:mx-auto">Sarah Chen, Software Architect</Text>
       </View>
     </View>
   );

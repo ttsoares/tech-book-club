@@ -29,8 +29,8 @@ export default function DarkButton({ text, icon, ...pressableProps }: MyButtonPr
       <View className="relative">
         {isHovered && <View className="absolute -inset-[4px] rounded-lg border border-c_n_0" />}
         <View className={`rounded-md p-[3px] ${isHovered ? 'bg-transparent' : ''}`}>
-          <View className="flex flex-row items-center justify-center rounded border border-c_n_0 bg-transparent px-4 py-2 hover:bg-dark-grad">
-            <Text className="px-6 py-3 font-Inter text-p4 font-bold tracking-widest text-c_n_0">
+          <View className="flex flex-row items-center justify-center rounded border-2 border-c_n_0 bg-transparent px-4 py-2 hover:bg-dark-grad">
+            <Text className="px-4 py-3 font-Inter text-p6m font-bold tracking-wide text-c_n_0  md:text-p4">
               {text}
             </Text>
             {icon && <Image className="group-hover:animate-bounce" source={icon} />}
