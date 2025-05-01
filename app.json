@@ -3,11 +3,11 @@
     "name": "tbc-lp",
     "slug": "tbc-lp",
     "version": "1.0.0",
-    "orientation": "prortrait",
-    "icon": "./assets/images/favicon.png",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "scheme": "tbc",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true, 
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro",
@@ -29,15 +29,14 @@
         }
       ]
     ],
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -45,6 +44,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e1cf3104-7bfe-42ce-9ccc-fa6054370ca7"
       }
     }
   }
